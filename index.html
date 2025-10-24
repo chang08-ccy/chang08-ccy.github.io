@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>張寧芯的個人網站</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<h1>歡迎來到我的個人網站</h1>
+
+<h2 id="title">Hello, 我的名字是張寧芯</h2>
+<button id="changeColor">變色</button>
+
+<script>
+$(document).ready(function(){
+    $("#changeColor").click(function(){
+        let colors = ["red", "blue", "green", "orange", "purple"];
+        let color = colors[Math.floor(Math.random() * colors.length)];
+        $("#title").css("color", color);
+    });
+});
+</script>
+
+</body>
+</html>
+
+Commit changes
+[ ] Add an optional extended description
+
