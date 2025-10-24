@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ajax 範例</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<h2>Ajax 顯示自訂資料</h2>
+<button id="loadData">載入資料</button>
+<p id="result">等待載入...</p>
+
+<nav>
+  <a href="index.html">回首頁</a>
+</nav>
+
+<script>
+$(document).ready(function(){
+    const data = {
+        name: "張寧芯",
+        email: "413570062@m365.fju.edu.tw"
+    };
+
+    $("#loadData").click(function(){
+        $("#result").html("姓名：" + data.name + "<br>電子郵件：" + data.email);
+    });
+});
+</script>
+
+</body>
+</html>
