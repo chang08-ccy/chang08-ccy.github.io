@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON 範例</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>JSON 範例：顯示使用者資料</h2>
+<button id="showUser">顯示資料</button>
+<div id="userInfo"></div>
+
+<nav>
+  <a href="index.html">回首頁</a>
+</nav>
+
+<script>
+const user = {
+    name: "張寧芯",
+    age: 25,
+    skills: ["HTML", "CSS", "JavaScript", "jQuery"]
+};
+
+document.getElementById("showUser").addEventListener("click", function(){
+    let html = "姓名: " + user.name + "<br>年齡: " + user.age + "<br>技能: " + user.skills.join(", ");
+    document.getElementById("userInfo").innerHTML = html;
+});
+</script>
+
+</body>
+</html>
